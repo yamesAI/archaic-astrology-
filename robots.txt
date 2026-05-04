@@ -1,0 +1,26 @@
+# Archaic Astrology - Robots.txt
+# Last Updated: 2025-01-01
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://archaic-astrology.netlify.app/sitemap.xml
+
+# Crawl rate optimization
+Crawl-delay: 1
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block specific paths (if needed in future)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /tmp/
