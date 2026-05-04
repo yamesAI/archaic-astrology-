@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Reading | Schedule an Astrology Consultation</title>
+    <meta name="description" content="Book your natal chart reading, Saturn Return preparation, or astrology consultation. Secure scheduling with immediate confirmation.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☿</span>
+                <span class="logo-text">Archaic Astrology</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="saturn-return-calculator.html">Saturn Return</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html" class="btn-nav active">Book Reading</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header booking-header">
+        <div class="container">
+            <h1>Book Your Reading</h1>
+            <p>Choose your service and find a time that works for you. Limited spots available each month.</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-grid">
+                <!-- Service Selection -->
+                <div class="service-selection">
+                    <h2>Select a Service</h2>
+                    
+                    <div class="service-options">
+                        <label class="service-option">
+                            <input type="radio" name="service" value="saturn" checked>
+                            <div class="option-card featured">
+                                <div class="badge">Recommended</div>
+                                <div class="option-header">
+                                    <span class="option-icon">♄</span>
+                                    <div>
+                                        <h3>Saturn Return Preparation</h3>
+                                        <p class="option-desc">60-min session + materials</p>
+                                    </div>
+                                </div>
+                                <div class="option-footer">
+                                    <span class="option-price">$200</span>
+                                    <span class="option-note">12 spots/month</span>
+                                </div>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="natal">
+                            <div class="option-card">
+                                <div class="option-header">
+                                    <span class="option-icon">🜛</span>
+                                    <div>
+                                        <h3>Natal Chart Reading</h3>
+                                        <p class="option-desc">Complete birth chart analysis</p>
+                                    </div>
+                                </div>
+                                <div class="option-footer">
+                                    <span class="option-price">$150</span>
+                                    <span class="option-note">60 minutes</span>
+                                </div>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="mercury">
+                            <div class="option-card">
+                                <div class="option-header">
+                                    <span class="option-icon">☿</span>
+                                    <div>
+                                        <h3>Mercury Retrograde Survival</h3>
+                                        <p class="option-desc">Personalized forecast</p>
+                                    </div>
+                                </div>
+                                <div class="option-footer">
+                                    <span class="option-price">$75</span>
+                                    <span class="option-note">30 minutes</span>
+                                </div>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="transit">
+                            <div class="option-card">
+                                <div class="option-header">
+                                    <span class="option-icon">⚹</span>
+                                    <div>
+                                        <h3>6-Month Transit Forecast</h3>
+                                        <p class="option-desc">What's coming for you</p>
+                                    </div>
+                                </div>
+                                <div class="option-footer">
+                                    <span class="option-price">$175</span>
+                                    <span class="option-note">45 minutes</span>
+                                </div>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="electional">
+                            <div class="option-card">
+                                <div class="option-header">
+                                    <span class="option-icon">☌</span>
+                                    <div>
+                                        <h3>Electional Timing</h3>
+                                        <p class="option-desc">Choose the best moment</p>
+                                    </div>
+                                </div>
+                                <div class="option-footer">
+                                    <span class="option-price">$300</span>
+                                    <span class="option-note">60 minutes</span>
+                                </div>
+                            </div>
+                        </label>
+                        
+                        <label class="service-option">
+                            <input type="radio" name="service" value="horary">
+                            <div class="option-card">
+                                <div class="option-header">
+                                    <span class="option-icon">?</span>
+                                    <div>
+                                        <h3>Horary Question</h3>
+                                        <p class="option-desc">Answer to one question</p>
+                                    </div>
+                                </div>
+                                <div class="option-footer">
+                                    <span class="option-price">$85</span>
+                                    <span class="option-note">30 minutes</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <!-- Package Options -->
+                    <div class="package-section">
+                        <h3>Or Choose a Package</h3>
+                        <div class="package-options">
+                            <label class="package-option">
+                                <input type="radio" name="service" value="package-foundation">
+                                <div class="option-card package">
+                                    <h4>Foundation Package</h4>
+                                    <p>Natal + 6-Month Transit</p>
+                                    <span class="package-price">
+                                        <span class="original">$325</span>
+                                        <span class="discounted">$275</span>
+                                    </span>
+                                </div>
+                            </label>
+                            
+                            <label class="package-option">
+                                <input type="radio" name="service" value="package-saturn">
+                                <div class="option-card package featured">
+                                    <div class="badge">Best Value</div>
+                                    <h4>Saturn Return Complete</h4>
+                                    <p>Saturn + Natal + 3 Check-ins</p>
+                                    <span class="package-price">
+                                        <span class="original">$500</span>
+                                        <span class="discounted">$400</span>
+                                    </span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Calendar & Form -->
+                <div class="booking-form-container">
+                    <div class="booking-card">
+                        <h2>Select Date & Time</h2>
+                        
+                        <!-- Calendar Widget -->
+                        <div class="calendar-widget">
+                            <div class="calendar-header">
+                                <button class="calendar-nav prev" aria-label="Previous month">‹</button>
+                                <span class="calendar-month">May 2025</span>
+                                <button class="calendar-nav next" aria-label="Next month">›</button>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="weekday">Su</div>
+                                <div class="weekday">Mo</div>
+                                <div class="weekday">Tu</div>
+                                <div class="weekday">We</div>
+                                <div class="weekday">Th</div>
+                                <div class="weekday">Fr</div>
+                                <div class="weekday">Sa</div>
+                                
+                                <!-- Calendar days will be generated by JS -->
+                                <div class="day empty"></div>
+                                <div class="day empty"></div>
+                                <div class="day empty"></div>
+                                <div class="day">1</div>
+                                <div class="day">2</div>
+                                <div class="day">3</div>
+                                <div class="day">4</div>
+                                <div class="day">5</div>
+                                <div class="day available">6</div>
+                                <div class="day">7</div>
+                                <div class="day available">8</div>
+                                <div class="day">9</div>
+                                <div class="day">10</div>
+                                <div class="day available">11</div>
+                                <div class="day">12</div>
+                                <div class="day">13</div>
+                                <div class="day available">14</div>
+                                <div class="day">15</div>
+                                <div class="day">16</div>
+                                <div class="day available">17</div>
+                                <div class="day">18</div>
+                                <div class="day">19</div>
+                                <div class="day available">20</div>
+                                <div class="day">21</div>
+                                <div class="day">22</div>
+                                <div class="day available">23</div>
+                                <div class="day">24</div>
+                                <div class="day">25</div>
+                                <div class="day available">26</div>
+                                <div class="day">27</div>
+                                <div class="day">28</div>
+                                <div class="day available">29</div>
+                                <div class="day">30</div>
+                                <div class="day">31</div>
+                            </div>
+                            <div class="calendar-legend">
+                                <span class="legend-item"><span class="dot available"></span> Available</span>
+                                <span class="legend-item"><span class="dot selected"></span> Selected</span>
+                                <span class="legend-item"><span class="dot booked"></span> Booked</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Time Slots -->
+                        <div class="time-slots" id="time-slots">
+                            <h3>Available Times for <span id="selected-date">May 8, 2025</span></h3>
+                            <div class="slots-grid">
+                                <button class="time-slot">10:00 AM</button>
+                                <button class="time-slot">11:30 AM</button>
+                                <button class="time-slot selected">2:00 PM</button>
+                                <button class="time-slot">3:30 PM</button>
+                                <button class="time-slot">5:00 PM</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Booking Form -->
+                        <form class="booking-form" id="booking-form">
+                            <h3>Your Information</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="birth-info">Birth Date, Time & Location</label>
+                                <textarea id="birth-info" rows="3" placeholder="Example: March 15, 1995, 2:30 PM, New York, NY" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="notes">Questions or Notes (optional)</label>
+                                <textarea id="notes" rows="2" placeholder="What would you like to focus on?"></textarea>
+                            </div>
+                            
+                            <div class="booking-summary">
+                                <div class="summary-row">
+                                    <span>Service</span>
+                                    <span id="summary-service">Saturn Return Preparation</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Date & Time</span>
+                                    <span id="summary-datetime">May 8, 2025 at 2:00 PM</span>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Total</span>
+                                    <span id="summary-total">$200</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large btn-full">
+                                Confirm Booking & Pay
+                            </button>
+                            
+                            <p class="form-note">
+                                <span class="lock">🔒</span> Secure payment processing. 
+                                You'll receive a confirmation email with meeting details.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="booking-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-icon">📹</span>
+                    <h3>Video Consultation</h3>
+                    <p>All readings are conducted via Zoom. You'll receive the link in your confirmation email.</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📹</span>
+                    <h3>Recording Included</h3>
+                    <p>Sessions are recorded (with your permission) and sent to you within 24 hours.</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📄</span>
+                    <h3>Written Materials</h3>
+                    <p>Receive charts, diagrams, and written summaries discussed during your reading.</p>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">⚡</span>
+                    <h3>48-Hour Reschedule</h3>
+                    <p>Need to change your appointment? Reschedule with 48 hours notice at no charge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">☿</span>
+                        <span class="logo-text">Archaic Astrology</span>
+                    </a>
+                    <p>Traditional astrology for modern lives. Techniques from Ptolemy to William Lilly.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#natal">Natal Chart Reading</a></li>
+                        <li><a href="services.html#saturn">Saturn Return</a></li>
+                        <li><a href="services.html#mercury">Mercury Retrograde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="saturn-return-calculator.html">Saturn Return Calculator</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="booking.html">Book a Reading</a></li>
+                        <li><a href="mailto:hello@archaicastrology.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Archaic Astrology. All rights reserved.</p>
+                <p class="disclaimer">Astrology is for entertainment and self-reflection purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

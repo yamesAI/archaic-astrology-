@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn Return Calculator | Find Your Once-in-a-Generation Date</title>
+    <meta name="description" content="Calculate your exact Saturn Return date. This once-every-29.5-year transformation happens at ages 29-30 and 58-59. Get your free preparation guide.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☿</span>
+                <span class="logo-text">Archaic Astrology</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="saturn-return-calculator.html" class="active">Saturn Return</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html" class="btn-nav">Book Reading</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="calculator-hero">
+        <div class="container">
+            <div class="hero-content centered">
+                <p class="hero-eyebrow">Free Tool</p>
+                <h1 class="hero-title">
+                    <span class="line">When Is Your</span>
+                    <span class="line accent">Saturn Return?</span>
+                </h1>
+                <p class="hero-subtitle">
+                    It happens once every 29.5 years. William Lilly wrote that it 
+                    "tests the native's mettle and either forges them into steel or breaks them."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-grid">
+                <!-- Calculator Form -->
+                <div class="calculator-form-container">
+                    <div class="form-card">
+                        <h2>Calculate Your Return Date</h2>
+                        <p>Enter your birth details to discover when your Saturn Return begins.</p>
+                        
+                        <form id="saturn-calculator" class="calculator-form">
+                            <div class="form-group">
+                                <label for="birth-date">Birth Date</label>
+                                <input type="date" id="birth-date" name="birth-date" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="birth-time">Birth Time (if known)</label>
+                                    <input type="time" id="birth-time" name="birth-time">
+                                    <span class="help-text">Approximate is fine</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="birth-location">Birth Location</label>
+                                    <input type="text" id="birth-location" name="birth-location" placeholder="City, Country">
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large btn-full">
+                                Calculate My Saturn Return
+                            </button>
+                        </form>
+                        
+                        <p class="form-note">
+                            <span class="star">✦</span> 
+                            You'll receive your Return date + free 10-page preparation guide
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Results Panel (Hidden initially) -->
+                <div class="results-panel" id="results-panel" style="display: none;">
+                    <div class="result-card">
+                        <div class="result-header">
+                            <span class="result-icon">♄</span>
+                            <h3>Your Saturn Return</h3>
+                        </div>
+                        
+                        <div class="result-date">
+                            <span class="date-label">Begins</span>
+                            <span class="date-value" id="return-date">March 15, 2025</span>
+                        </div>
+                        
+                        <div class="result-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Your Age at Return</span>
+                                <span class="detail-value" id="return-age">29 years, 4 months</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Return Window</span>
+                                <span class="detail-value">12 months</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Peak Period</span>
+                                <span class="detail-value" id="peak-period">June - August 2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="countdown-box">
+                            <span class="countdown-label">Time to Prepare</span>
+                            <div class="countdown-display" id="countdown">
+                                <div class="countdown-item">
+                                    <span class="countdown-number" id="countdown-months">8</span>
+                                    <span class="countdown-unit">months</span>
+                                </div>
+                                <div class="countdown-item">
+                                    <span class="countdown-number" id="countdown-days">14</span>
+                                    <span class="countdown-unit">days</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="result-actions">
+                            <a href="#email-capture" class="btn btn-primary btn-large btn-full">
+                                Get My Free Guide
+                            </a>
+                            <a href="booking.html?service=saturn" class="btn btn-secondary btn-full">
+                                Book Saturn Return Reading
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Info Sidebar -->
+                <div class="calculator-info">
+                    <div class="info-card">
+                        <h4>What Is Saturn Return?</h4>
+                        <p>
+                            Saturn takes 29.5 years to orbit the Sun. When it returns to the 
+                            position it occupied at your birth, you experience your 
+                            <strong>Saturn Return</strong>.
+                        </p>
+                        <p>
+                            This is astrology's rite of passage into true adulthood. It's a 
+                            12-month period of testing, transformation, and claiming your authority.
+                        </p>
+                    </div>
+                    
+                    <div class="info-card warning">
+                        <h4>⚠️ Why Preparation Matters</h4>
+                        <p>
+                            William Lilly wrote that Saturn Returns "test the native's mettle 
+                            and either forge them into steel or break them."
+                        </p>
+                        <p>
+                            Clients who prepare for their Return navigate it successfully. 
+                            Those who don't often struggle with:
+                        </p>
+                        <ul>
+                            <li>Career upheaval</li>
+                            <li>Relationship endings</li>
+                            <li>Health challenges</li>
+                            <li>Identity crises</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>What You'll Receive</h4>
+                        <ul class="checklist">
+                            <li>Exact Saturn Return date</li>
+                            <li>12-month window timeline</li>
+                            <li>10-page preparation guide</li>
+                            <li>What to expect by sign</li>
+                            <li>Key dates to watch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture Section -->
+    <section id="email-capture" class="email-capture">
+        <div class="container">
+            <div class="capture-card">
+                <div class="capture-content">
+                    <h2>Get Your Free Saturn Return Guide</h2>
+                    <p>
+                        Enter your email to receive your personalized Saturn Return date 
+                        calculation plus our 10-page preparation guide.
+                    </p>
+                    
+                    <form class="email-form" id="email-form">
+                        <div class="email-input-group">
+                            <input type="email" placeholder="your@email.com" required>
+                            <button type="submit" class="btn btn-primary">Send My Guide</button>
+                        </div>
+                        <label class="consent">
+                            <input type="checkbox" required>
+                            <span>I agree to receive astrology insights and offers via email</span>
+                        </label>
+                    </form>
+                    
+                    <p class="privacy-note">
+                        🔒 We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </div>
+                <div class="capture-visual">
+                    <div class="guide-preview">
+                        <div class="preview-header">
+                            <span>Saturn Return Guide</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-chapter">
+                                <span class="chapter-num">01</span>
+                                <span class="chapter-title">What Is Saturn Return?</span>
+                            </div>
+                            <div class="preview-chapter">
+                                <span class="chapter-num">02</span>
+                                <span class="chapter-title">Your Exact Dates</span>
+                            </div>
+                            <div class="preview-chapter">
+                                <span class="chapter-num">03</span>
+                                <span class="chapter-title">What to Expect</span>
+                            </div>
+                            <div class="preview-chapter">
+                                <span class="chapter-num">04</span>
+                                <span class="chapter-title">Preparation Strategies</span>
+                            </div>
+                            <div class="preview-chapter">
+                                <span class="chapter-num">05</span>
+                                <span class="chapter-title">By Your Sign</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saturn Return Explained -->
+    <section class="saturn-explained">
+        <div class="container">
+            <div class="section-header">
+                <h2>Understanding Your Saturn Return</h2>
+                <p>The most important astrological event of your adult life</p>
+            </div>
+            
+            <div class="explained-grid">
+                <div class="explained-card">
+                    <div class="explained-icon">🜛</div>
+                    <h3>First Return: Age 29-30</h3>
+                    <p>
+                        The astrological coming-of-age. Saturn strips away what isn't 
+                        authentic and demands you build foundations for your adult life.
+                    </p>
+                    <ul>
+                        <li>Career direction crystallizes</li>
+                        <li>Relationships either commit or end</li>
+                        <li>You claim your authority</li>
+                        <li>Childhood patterns are tested</li>
+                    </ul>
+                </div>
+                
+                <div class="explained-card">
+                    <div class="explained-icon">☪</div>
+                    <h3>Second Return: Age 58-59</h3>
+                    <p>
+                        The entrance into elder wisdom. Saturn asks what legacy you'll 
+                        leave and demands you claim your role as teacher/mentor.
+                    </p>
+                    <ul>
+                        <li>Career transitions to legacy</li>
+                        <li>Wisdom is crystallized</li>
+                        <li>You become the elder</li>
+                        <li>Life purpose is reviewed</li>
+                    </ul>
+                </div>
+                
+                <div class="explained-card full-width">
+                    <h3>The 12-Month Window</h3>
+                    <div class="timeline-visual">
+                        <div class="timeline-phase">
+                            <span class="phase-marker">Month 1-3</span>
+                            <span class="phase-name">The Approach</span>
+                            <span class="phase-desc">You feel Saturn's presence. Restriction, pressure, or a sense that something must change.</span>
+                        </div>
+                        <div class="timeline-phase">
+                            <span class="phase-marker">Month 4-6</span>
+                            <span class="phase-name">The Peak</span>
+                            <span class="phase-desc">Saturn is exact. Major events occur. This is the testing ground.</span>
+                        </div>
+                        <div class="timeline-phase">
+                            <span class="phase-marker">Month 7-9</span>
+                            <span class="phase-name">The Integration</span>
+                            <span class="phase-desc">Lessons are learned. New structures are built.</span>
+                        </div>
+                        <div class="timeline-phase">
+                            <span class="phase-marker">Month 10-12</span>
+                            <span class="phase-name">The Exit</span>
+                            <span class="phase-desc">Saturn moves on. You emerge transformed.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Clients Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <blockquote class="testimonial">
+                    <p>"I got my Saturn Return reading 6 months before it started. When Saturn hit my career house, I knew exactly what was happening. Instead of panicking about the layoff, I used the energy to start my own business. Best money I've ever spent."</p>
+                    <footer>
+                        <cite>— Jennifer K.</cite>
+                        <span class="reading-type">Age 30, First Saturn Return</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"My relationship ended during my Saturn Return. Because I'd had the reading, I understood it was Saturn testing what was real. It was painful but necessary. The preparation helped me navigate it with grace instead of desperation."</p>
+                    <footer>
+                        <cite>— Michael R.</cite>
+                        <span class="reading-type">Age 31, First Saturn Return</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"Second Saturn Return preparation was eye-opening. I realized I needed to transition from 'doing' to 'teaching.' Changed my entire business model. Now I mentor younger professionals instead of grinding myself."</p>
+                    <footer>
+                        <cite>— Patricia M.</cite>
+                        <span class="reading-type">Age 59, Second Saturn Return</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Don't Wait Until Saturn Hits</h2>
+            <p>Preparation makes the difference between being forged into steel... or broken.</p>
+            <a href="#saturn-calculator" class="btn btn-primary btn-large">Calculate Your Date</a>
+            <p class="guarantee">
+                Limited to 12 Saturn Return readings per month. 
+                <a href="booking.html">Book yours now →</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">☿</span>
+                        <span class="logo-text">Archaic Astrology</span>
+                    </a>
+                    <p>Traditional astrology for modern lives. Techniques from Ptolemy to William Lilly.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#natal">Natal Chart Reading</a></li>
+                        <li><a href="services.html#saturn">Saturn Return</a></li>
+                        <li><a href="services.html#mercury">Mercury Retrograde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="saturn-return-calculator.html">Saturn Return Calculator</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="booking.html">Book a Reading</a></li>
+                        <li><a href="mailto:hello@archaicastrology.com">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Archaic Astrology. All rights reserved.</p>
+                <p class="disclaimer">Astrology is for entertainment and self-reflection purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>

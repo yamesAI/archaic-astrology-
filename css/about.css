@@ -1,0 +1,453 @@
+/* ========================================
+   ABOUT PAGE STYLES
+   ======================================== */
+
+/* Page Header */
+.page-header {
+    padding: calc(var(--space-2xl) * 1.5) 0 var(--space-xl);
+    background: var(--color-bg-dark);
+    text-align: center;
+}
+
+.page-header h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 400;
+    margin-bottom: var(--space-sm);
+}
+
+.page-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+}
+
+/* Content Sections */
+.content-section {
+    padding: var(--space-2xl) 0;
+}
+
+.content-section.bg-alt {
+    background: var(--color-bg-dark);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.content-grid.reverse {
+    direction: rtl;
+}
+
+.content-grid.reverse > * {
+    direction: ltr;
+}
+
+.content-text .lead {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+}
+
+.content-text p {
+    margin-bottom: var(--space-md);
+    color: var(--color-text-light);
+}
+
+.inline-quote {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md);
+    border-left: 4px solid var(--color-accent);
+    background: var(--color-bg-card);
+}
+
+.inline-quote p {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.inline-quote cite {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-style: normal;
+}
+
+/* Ancient Text Visual */
+.ancient-text {
+    background: var(--color-text);
+    color: var(--color-bg);
+    padding: var(--space-xl);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.text-lines {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.ancient-line {
+    font-family: var(--font-heading);
+}
+
+.ancient-line:first-child {
+    font-size: 2rem;
+    color: var(--color-accent);
+    letter-spacing: 0.3em;
+}
+
+.ancient-line:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.ancient-line:nth-child(3) {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--color-accent-light);
+}
+
+.ancient-line:last-child {
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+    opacity: 0.7;
+}
+
+/* Master Cards */
+.master-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.master-cards.three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.master-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.master-card.large {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.master-header {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    padding: var(--space-md);
+}
+
+.master-card.large .master-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.master-date {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    letter-spacing: 0.1em;
+}
+
+.master-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    margin: var(--space-xs) 0;
+}
+
+.master-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.9;
+}
+
+.master-content {
+    padding: var(--space-md);
+}
+
+.master-quote {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.master-content p {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+}
+
+.master-content ul {
+    margin: var(--space-sm) 0;
+    padding-left: var(--space-md);
+    color: var(--color-text-light);
+}
+
+.master-content li {
+    margin-bottom: 0.4rem;
+}
+
+/* Renaissance Feature */
+.renaissance-feature {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-xl);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.era-badge {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-text);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    margin-bottom: var(--space-sm);
+}
+
+.renaissance-content h3 {
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-family: var(--font-heading);
+    font-style: italic;
+    color: var(--color-primary);
+    font-size: 1.15rem;
+    margin-bottom: var(--space-md);
+}
+
+.feature-quote {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-md);
+    border-left: 3px solid var(--color-accent);
+}
+
+.renaissance-content > p {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-sm);
+}
+
+.feature-list {
+    margin: var(--space-md) 0;
+    padding-left: var(--space-md);
+}
+
+.feature-list li {
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-light);
+}
+
+.feature-list strong {
+    color: var(--color-primary);
+}
+
+/* Lilly Book Visual */
+.lilly-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-spine {
+    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary));
+    color: var(--color-bg);
+    padding: var(--space-lg);
+    border-radius: 4px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    box-shadow: 10px 10px 30px rgba(44, 24, 16, 0.3);
+}
+
+.book-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.book-date {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Recovery Timeline */
+.recovery-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-md);
+    padding: var(--space-sm);
+    background: var(--color-bg-card);
+    border-radius: 4px;
+    border-left: 3px solid var(--color-accent);
+}
+
+.timeline-year {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-primary);
+    min-width: 60px;
+}
+
+.timeline-item p {
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+/* Methodology Grid */
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.method-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.method-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(44, 24, 16, 0.08);
+}
+
+.method-number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
+}
+
+.method-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    margin-bottom: var(--space-sm);
+}
+
+.method-card p {
+    color: var(--color-text-light);
+}
+
+/* Content CTA */
+.content-cta {
+    background: var(--color-text);
+    color: var(--color-bg);
+    padding: var(--space-2xl) 0;
+    text-align: center;
+}
+
+.content-cta h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 400;
+    margin-bottom: var(--space-sm);
+}
+
+.content-cta > p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-grid,
+    .content-grid.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    
+    .master-card.large {
+        grid-template-columns: 1fr;
+    }
+    
+    .master-cards.three-col {
+        grid-template-columns: 1fr;
+    }
+    
+    .renaissance-feature {
+        grid-template-columns: 1fr;
+    }
+    
+    .renaissance-visual {
+        order: -1;
+    }
+    
+    .lilly-book {
+        justify-content: flex-start;
+    }
+    
+    .book-spine {
+        writing-mode: horizontal-tb;
+        height: auto;
+        width: 100%;
+        padding: var(--space-md);
+    }
+    
+    .methodology-grid {
+        grid-template-columns: 1fr;
+    }
+}
