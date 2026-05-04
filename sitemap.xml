@@ -82,6 +82,70 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Saturn Return Sign Series - Complete Zodiac Coverage -->
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-gemini.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-cancer.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-leo.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-virgo.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-libra.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-scorpio.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-sagittarius.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-capricorn.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://archaic-astrology.netlify.app/blog/saturn-return-in-aquarius.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Resources - Linkable Assets -->
   <url>
     <loc>https://archaic-astrology.netlify.app/resources/saturn-return-dates-2025.html</loc>

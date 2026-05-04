@@ -13,6 +13,19 @@
 .placeholder-image.horary { background: linear-gradient(135deg, #8B7355 0%, #5D2E0C 100%); }
 .placeholder-image.jupiter { background: linear-gradient(135deg, #D4AF37 0%, #8B4513 100%); }
 .placeholder-image.ptolemy { background: linear-gradient(135deg, #2C1810 0%, #5D2E0C 100%); }
+/* Zodiac Sign Placeholders */
+.placeholder-image.pisces { background: linear-gradient(135deg, #5B7C99 0%, #2E4A5E 100%); }
+.placeholder-image.aries { background: linear-gradient(135deg, #B85450 0%, #8B3A36 100%); }
+.placeholder-image.taurus { background: linear-gradient(135deg, #7D9B76 0%, #4A6B43 100%); }
+.placeholder-image.gemini { background: linear-gradient(135deg, #D4AF37 0%, #C9A227 100%); }
+.placeholder-image.cancer { background: linear-gradient(135deg, #9B8AA6 0%, #6B5B7A 100%); }
+.placeholder-image.leo { background: linear-gradient(135deg, #D4A84B 0%, #B8860B 100%); }
+.placeholder-image.virgo { background: linear-gradient(135deg, #8FA68E 0%, #5B7A5A 100%); }
+.placeholder-image.libra { background: linear-gradient(135deg, #C9A9C9 0%, #A080A0 100%); }
+.placeholder-image.scorpio { background: linear-gradient(135deg, #5D3A58 0%, #3D1E3A 100%); }
+.placeholder-image.sagittarius { background: linear-gradient(135deg, #9B6B9B 0%, #7D4B7D 100%); }
+.placeholder-image.capricorn { background: linear-gradient(135deg, #5D5D5D 0%, #3D3D3D 100%); }
+.placeholder-image.aquarius { background: linear-gradient(135deg, #6B8E9B 0%, #4A6B7A 100%); }
 .image-icon { font-size: 6rem; color: rgba(255,255,255,0.8); }
 .post-image.small { min-height: 150px; }
 .post-image.small .image-icon { font-size: 3rem; }
